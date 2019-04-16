@@ -25,7 +25,7 @@ def process_image(url):
     image = _get_image(url)
     image.filter(ImageFilter.SHARPEN)
 
-    return pytesseract.image_to_string(image, lang='jpn')
+    return pytesseract.image_to_string(image, lang='eng')
     #return txt
 
 def _get_image(url):
